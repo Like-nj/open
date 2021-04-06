@@ -28,6 +28,17 @@ body {
   font-family: Roboto;
 }
 
+ul {
+  list-style: none;
+}
+
+button,
+button:focus {
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
 /* header */
 header {
   display: flex;
@@ -59,3 +70,78 @@ header .logoicons .fa-search {
 }
 
 /* info */
+.info {
+  padding: var(--padding);
+}
+
+.info .hashtags {
+  display: flex;
+  color: var(--blue-color);
+  font-size: var(--font-small);
+}
+
+.info .hashtags li {
+  margin-right: var(--padding);
+}
+
+.info .titleAndButton {
+  display: flex;
+}
+
+.info .titleAndButton .title {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+.info .titleAndButton .moreBtn {
+  height: 100%; /*???*/
+}
+
+.info .actions {
+  display: flex;
+  justify-content: space-around;
+}
+
+.info .actions button {
+  display: flex;
+  flex-direction: column;
+  font-size: var(--font-large);
+  color: var(--grey-dark-color);
+}
+
+/*
+  margin: 5px 10px; 위&아래, 오른쪽&왼쪽
+  margin: 5px 7px 3px 0px; 위, 오른쪽, 아래, 왼쪽
+*/
+
+.info .actions button i {
+  margin: 0 auto; /*중앙정렬*/
+  margin-bottom: calc(var(--padding) / 2);
+}
+
+.info .actions button i.active {
+  color: var(--blue-color);
+}
+
+.info .channel {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info .channel .metadata {
+  display: flex;
+  align-items: center;
+}
+
+.info .channel .metadata .info {
+  display: flex;
+  flex-direction: column;
+}
+
+.info .channel .metadata img {
+  border-radius: 50%;
+  width: var(--avatar-size);
+  height: var(--avatar-size);
+}
