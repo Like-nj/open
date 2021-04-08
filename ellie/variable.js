@@ -1,7 +1,7 @@
 'use strict';
-/* Variable
- Mutable type : let
- Immutable type : const
+/*  Variable
+    Mutable type : let
+    Immutable type : const
 */
 
 // var (don't ever use this!)

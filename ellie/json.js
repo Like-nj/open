@@ -1,7 +1,7 @@
 'use strict'
 
 // 1. Object to JSON
-
+// json.stringify
 let json = JSON.stringify(['a','b', 'c']);
 console.log(json);
 
@@ -23,8 +23,10 @@ json = JSON.stringify(rabbit, (key, value) => {
     return key === 'name' ? 'ellie' : value;
 });
 console.log(json);
+console.log('-----------------------------');
 
 // 2. JSON to Object
+// json.parse
 //console.clear();
 json = JSON.stringify(rabbit); 
 const obj = JSON.parse(json);

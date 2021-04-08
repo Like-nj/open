@@ -81,7 +81,7 @@
 
       const resultQ8_1  = !students.some((student)=>student.score >= 50);
       console.log(resultQ8_1);
-  }
+  } 
   
   // Q9. compute students' average score
   {
@@ -91,9 +91,10 @@
         console.log(preStudent);
         console.log(currStudent);
         return preStudent+currStudent.score; 
-
+        
       },0);
       console.log(resultQ9/students.length);
+
   }
   
   // Q10. make a string containing all the scores

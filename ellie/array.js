@@ -52,3 +52,4 @@ console.log(fruits.includes('🍑'));
 console.log(fruits);
 console.log(fruits.push('🍑'));
 console.log(fruits.lastIndexOf('🍑'));
+
