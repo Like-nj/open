@@ -1,0 +1,56 @@
+body {
+  text-align: center;
+  background-color: darkslategrey;
+}
+
+header {
+  margin: 30px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+nav img,
+nav span {
+  margin-right: 16px;
+}
+
+.box {
+  color: black;
+  padding: 35px 10px;
+  width: 60px;
+  /* vertical-align: middle; */
+}
+
+.box.blue {
+  background-color: blue;
+}
+.box.yellow {
+  background-color: yellow;
+}
+.box.pink {
+  background-color: pink;
+}
+
+.autolist {
+  display: flex;
+  flex-direction: row;
+  background-color: whitesmoke;
+  margin: 10px;
+  border-radius: 20px / 20px;
+  align-items: center;
+}
+
+.autolist .aimg {
+  margin: 10px 30px;
+}
+
+.clothesList {
+  margin: 0px 200px;
+  text-align: center;
+  height: 800px;
+  overflow: auto;
+}
