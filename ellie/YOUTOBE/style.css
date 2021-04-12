@@ -88,15 +88,23 @@ header .logoicons .fa-search {
   display: flex;
 }
 
-.info .titleAndButton .title {
+.info .titleAndButton .title.clamp {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
   overflow: hidden;
 }
 
+.info .titleAndButton .title {
+  display: -webkit-box;
+}
+
 .info .titleAndButton .moreBtn {
   height: 100%; /*???*/
+}
+
+.info .titleAndButton .moreBtn.clicked {
+  transform: rotate(180deg);
 }
 
 .info .actions {
@@ -181,4 +189,34 @@ header .logoicons .fa-search {
 .upnextplayer .item .moreBtn {
   height: 100%;
   margin: 0, var(--padding);
+}
+
+.upnextplayer .item .img {
+  flex: 1 1 35%;
+  margin-right: var(--padding);
+}
+.upnextplayer .item .iteminfo {
+  flex: 1 1 60%;
+}
+.upnextplayer .item .moreBtn {
+  flex: 1 1 5%;
+}
+
+.upnextplayer .item .img image {
+  width: 100%;
+}
+
+/* * {
+  color: black;
+} */
+
+/* Small Devices, Tablets : 768px ~ */
+@media only screen and (min-width: 768px) {
+  /* * {
+    color: blue;
+  } */
+  .infoandupnext {
+    display: flex;
+    flex-direction: row;
+  }
 }

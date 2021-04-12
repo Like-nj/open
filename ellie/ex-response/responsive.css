@@ -1,0 +1,33 @@
+body .logo {
+  font-size: 1.75em;
+  color: sienna;
+  text-align: center;
+  margin: auto;
+}
+
+.container {
+  display: flex;
+  padding: 2em;
+}
+
+.component {
+  border: 1px solid sienna;
+  margin: 1em;
+}
+
+.title {
+  font-size: 2rem;
+  padding: 0.5em 0.5rem;
+  background-color: burlywood;
+}
+
+.contents {
+  font-size: 1em;
+  padding: 0.5em 0.5rem;
+}
+
+@media screen and (max-width: 48rem) {
+  .container {
+    flex-direction: column;
+  }
+}

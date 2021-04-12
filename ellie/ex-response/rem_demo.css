@@ -1,0 +1,21 @@
+.component {
+  width: 50%;
+  border: 1px solid burlywood;
+  font-size: 2rem;
+}
+
+.title {
+  background-color: chocolate;
+  padding: 0.5em 0.5rem;
+}
+
+.contents {
+  font-size: 1rem;
+  padding: 0.5em 0.5rem; /* font-size에 따라 */
+}
+
+@media screen and (max-width: 780px) {
+  .component {
+    font-size: 1.5rem;
+  }
+}
